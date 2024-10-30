@@ -122,11 +122,13 @@
                     habilidades, proporcionando uma experiência inclusiva e divertida para cada criança. Dentre estas, são:
                     </p>
                 </div>
+
+                
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="feature-item p-4 pt-0">
                             <div class="feature-icon p-4 mb-4">
-                                <i class="far fa-handshake fa-3x"></i>
+                                <i class="bi bi-award"></i>
                             </div>
                             <h4 class="mb-4">Desenvolver habilidades cognitivas, motoras e sociais</h4>
                             
@@ -135,7 +137,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="feature-item p-4 pt-0">
                             <div class="feature-icon p-4 mb-4">
-                                <i class="fa fa-dollar-sign fa-3x"></i>
+                            <i class="bi bi-check-all"></i>
                             </div>
                             <h4 class="mb-4">Trabalhar a inclusão</h4>
                          
@@ -144,7 +146,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="feature-item p-4 pt-0">
                             <div class="feature-icon p-4 mb-4">
-                                <i class="fa fa-bullseye fa-3x"></i>
+                            <i class="bi bi-controller"></i>
                             </div>
                             <h4 class="mb-4">Oferecer jogos simples, objetivos e divertidos</h4>
                           
@@ -153,7 +155,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="feature-item p-4 pt-0">
                             <div class="feature-icon p-4 mb-4">
-                                <i class="fa fa-headphones fa-3x"></i>
+                            <i class="bi bi-emoji-smile"></i>
                             </div>
                             <h4 class="mb-4">Trazer suporte às crianças durante as atividades</h4>
                       
@@ -170,7 +172,7 @@
                 <div class="row g-5">
                     <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="about-item-content bg-white rounded p-5 h-100">
-                            <h4 class="text-primary">About Our Company</h4>
+                            <h4 class="text-primary">Sobre o nosso projeto</h4>
                             <h1 class="display-4 mb-4">High Range of Exploring Protection</h1>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt debitis sint tempora. Corporis consequatur illo blanditiis voluptates aperiam quos aliquam totam aliquid rem explicabo,
                             </p>
