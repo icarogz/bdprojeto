@@ -45,8 +45,10 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light"> 
                     <a href="#" class="navbar-brand p-0">
-                        <h1 class="text-primary mb-0"><i class="fab fa-slack me-2"></i>Conexões Brincantes</h1>
-                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                        <h2 class="text-primary mb-0">
+                            <img src="img/teste2logo.png">
+                        </i>Conexões Brincantes</h2>
+                     
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars"></span>
@@ -78,7 +80,7 @@
                             </div>
                             <div class="col-lg-5 animated fadeInRight">
                                 <div class="calrousel-img" style="object-fit: cover;">
-                                    <img src="img/imginicio1.png" class="img-fluid w-100" alt="">
+                                    <img src="img/supermario.png" class="img-fluid w-100" alt="">
                                 </div>
                             </div>
                         </div>
@@ -91,7 +93,7 @@
                         <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
                             <div class="col-lg-5 animated fadeInLeft">
                                 <div class="calrousel-img">
-                                    <img src="img/imginicio1.png" class="img-fluid w-100" alt="">
+                                    <img src="img/supermario.png" class="img-fluid w-100" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-7 animated fadeInRight">
@@ -114,35 +116,16 @@
         <!-- Carousel End -->
 
         <!-- Feature Start -->
+        
+        <center>
+
+        
         <div class="container-fluid feature bg-light py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h1 class="display-4 mb-4">Nossos serviços</h1>
-                    <p class="mb-0">Oferecemos uma variedade de projetos desenvolvidos especialmente para estimular
-                    habilidades, proporcionando uma experiência inclusiva e divertida para cada criança. Dentre estas, são:
-                    </p>
+                    <h1 class="display-4 mb-4">Pontuação</h1>
+                   
                 </div>
-
-                
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="feature-item p-4 pt-0">
-                            <div class="feature-icon p-4 mb-4">
-                                <i class="bi bi-award"></i>
-                            </div>
-                            <h4 class="mb-4">Desenvolver habilidades cognitivas, motoras e sociais</h4>
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="feature-item p-4 pt-0">
-                            <div class="feature-icon p-4 mb-4">
-                            <i class="bi bi-check-all"></i>
-                            </div>
-                            <h4 class="mb-4">Trabalhar a inclusão</h4>
-                         
-                        </div>
-                    </div>
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="feature-item p-4 pt-0">
                             <div class="feature-icon p-4 mb-4">
@@ -152,18 +135,11 @@
                           
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="feature-item p-4 pt-0">
-                            <div class="feature-icon p-4 mb-4">
-                            <i class="bi bi-emoji-smile"></i>
-                            </div>
-                            <h4 class="mb-4">Trazer suporte às crianças durante as atividades</h4>
-                      
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
+        </center>
         <!-- Feature End -->
 
         <!-- jogos -->
@@ -180,7 +156,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/imgcabeca.png" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/luigi.png" class="img-fluid rounded-top w-100" alt="">
                                 <div class="service-icon p-3">
                                     <i class="bi bi-puzzle"></i>
                                 </div>
@@ -197,7 +173,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/imglogica.png" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/mario.png" class="img-fluid rounded-top w-100" alt="">
                                 <div class="service-icon p-3">
                                     <i class="bi bi-lightbulb"></i>
                                 </div>
@@ -215,7 +191,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/imgmat.png" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/yoshi.png" class="img-fluid rounded-top w-100" alt="">
                                 <div class="service-icon p-3">
                                     <i class="bi bi-percent"></i>
                                 </div>
@@ -251,8 +227,6 @@
                 </div>
             </div>
         </div>
-
-        
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">

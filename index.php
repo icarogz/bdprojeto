@@ -48,7 +48,7 @@
     <input name="username" placeholder="Nome de usuário" type="text" required/>
     <input name="password" placeholder="Senha" type="password" required/>
     <input class="btn" type="submit" value="Entrar">
-    </form>
+      </form>
           </div>
         </div>
       </div>
