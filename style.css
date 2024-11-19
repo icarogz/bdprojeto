@@ -338,15 +338,15 @@
         margin-left: 45px;
     }
 }
+
 /*** Carousel Hero Header End ***/
 
 
 /*** Single Page Hero Header Start ***/
-
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(1, 201, 48, 0.9), rgba(0, 0, 0, 0.2)), url(../img/fundomario1.jpeg);
+    background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)), url('../bdprojeto-main/img/fundo.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -565,7 +565,7 @@
 /*** FAQs Start ***/
 .faq-section .accordion .accordion-item .accordion-header .accordion-button {
     color: var(--bs-white);
-    background: rgba(1, 201, 164, 0.8);
+    background: rgba(1, 95, 201, .8);
     font-size: 18px;
 }
 
@@ -886,5 +886,6 @@
     border-top: 1px solid rgba(255, 255, 255, .08);
 }
 /*** copyright end ***/
+
 
 

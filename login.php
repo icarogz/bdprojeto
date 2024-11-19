@@ -26,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Verificando a senha armazenada como texto simples
                 if ($password === $user['senha']) {
                     // Iniciando a sessão do usuário
+                    $_SESSION['user_id'] = $user['id'];
                     $_SESSION['usuario'] = $user['usuario'];
                     $_SESSION['nome'] = $user['nome'];
 

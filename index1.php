@@ -47,7 +47,7 @@
                     <a href="#" class="navbar-brand p-0">
                         <h2 class="text-primary mb-0">
                             <img src="img/teste2logo.png">
-                        </i>Conexões Brincantes</h2>
+                        Conexões Brincantes</h2>
                      
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -119,11 +119,48 @@
         
         <center>
 
-        
+                             <?php
+                                if (isset($_SESSION['user_id'])) {
+                                    $user_id = $_SESSION['user_id'];
+
+                                    try {
+                                        $pdo = new PDO('mysql:host=localhost;dbname=trabalhofinal', 'root', '');
+                                        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                                        $stmt = $pdo->prepare("SELECT SUM(score) AS total_score FROM user_scores WHERE user_id = :user_id");
+                                        $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+                                        $stmt->execute();
+
+                                        // Obtém o resultado
+                                        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+                                        // Verifica se há pontuação total ou define como 0
+                                        $totalScore = $row['total_score'] ? $row['total_score'] : 0;
+
+                                        // Exibe a pontuação total
+                                      
+                                    } catch (PDOException $e) {
+                                        echo "Erro ao acessar o banco de dados: " . $e->getMessage();
+                                    }
+                                } else {
+                                    echo "Usuário não autenticado.";
+                                }
+                                ?>
+                            </h4>
+
+                          
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="container-fluid feature bg-light py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h1 class="display-4 mb-4">Pontuação</h1>
+                    <h1 class="display-4 mb-4">Troféus</h1>
                    
                 </div>
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
@@ -131,7 +168,35 @@
                             <div class="feature-icon p-4 mb-4">
                             <i class="bi bi-controller"></i>
                             </div>
-                            <h4 class="mb-4">Oferecer jogos simples, objetivos e divertidos</h4>
+                            <h4 class="mb-4">
+                             <?php
+                                if (isset($_SESSION['user_id'])) {
+                                    $user_id = $_SESSION['user_id'];
+
+                                    try {
+                                        $pdo = new PDO('mysql:host=localhost;dbname=trabalhofinal', 'root', '');
+                                        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                                        $stmt = $pdo->prepare("SELECT SUM(score) AS total_score FROM user_scores WHERE user_id = :user_id");
+                                        $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+                                        $stmt->execute();
+
+                                        // Obtém o resultado
+                                        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+                                        // Verifica se há pontuação total ou define como 0
+                                        $totalScore = $row['total_score'] ? $row['total_score'] : 0;
+
+                                        // Exibe a pontuação total
+                                        echo "Sua pontuação total é: " . $totalScore;
+                                    } catch (PDOException $e) {
+                                        echo "Erro ao acessar o banco de dados: " . $e->getMessage();
+                                    }
+                                } else {
+                                    echo "Usuário não autenticado.";
+                                }
+                                ?>
+                            </h4>
+
                           
                         </div>
                     </div>
@@ -140,9 +205,7 @@
             </div>
         </div>
         </center>
-        <!-- Feature End -->
-
-        <!-- jogos -->
+        
         <div class="container-fluid service py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
@@ -165,51 +228,16 @@
                                 <div class="service-content-inner">
                                     <a href="#" class="d-inline-block h4 mb-4">Quebra-Cabeça</a>
                                     <p class="mb-4">Quebra-cabeça divertido e fácil para estimular a concentração e habilidades motoras.</p>
-                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Jogar</a>
+                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="puzzle-main">Jogar</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="img/mario.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="service-icon p-3">
-                                    <i class="bi bi-lightbulb"></i>
-                                </div>
-                            </div>
-                            <div class="service-content p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="d-inline-block h4 mb-4">Jogo de lógica básica</a>
-                                    <p class="mb-4">
-                                        Este jogo ajuda a desenvolver o raciocínio e promove a concentração de maneira leve e interativa.</p>
-                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Jogar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="img/yoshi.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="service-icon p-3">
-                                    <i class="bi bi-percent"></i>
-                                </div>
-                            </div>
-                            <div class="service-content p-4">
-                                <div class="service-content-inner">
-                                    <a href="#" class="d-inline-block h4 mb-4">Jogo de matemática financeira simples</a>
-                                    <p class="mb-4">
-                                        Resolva desafios práticos para entender o valor do dinheiro e como usá-lo no dia a dia.</p>
-                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Jogar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="service-item">
                             <div class="service-img">
-                                <img src="img/imgquiz.png" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/mario.png" class="img-fluid rounded-top w-100" alt="">
                                 <div class="service-icon p-3">
                                     <i class="bi bi-question-square"></i>
                                 </div>
@@ -218,7 +246,7 @@
                                 <div class="service-content-inner">
                                     <a href="#" class="d-inline-block h4 mb-4">Quiz</a>
                                     <p class="mb-4">Teste seus conhecimentos com este quiz divertido!</p>
-                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Jogar</a>
+                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="quiz">Jogar</a>
                                 </div>
                             </div>
                         </div>
