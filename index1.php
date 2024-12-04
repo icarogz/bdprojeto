@@ -46,7 +46,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light"> 
                     <a href="#" class="navbar-brand p-0">
                         <h2 class="text-primary mb-0">
-                            <img src="img/teste2logo.png">
+                           <img src="img/testelogo.png" alt="">
                         Conexões Brincantes</h2>
                      
                     </a>
@@ -58,6 +58,7 @@
                             <a href="index1.php" class="nav-item nav-link active">Inicio</a>
                             <a href="about.html" class="nav-item nav-link">Sobre</a>
                             <a href="service.html" class="nav-item nav-link">Jogos</a>
+                            <a href="gerenciamento/index.php">Gerenciamento</a>
                 </nav>
             </div>
         </div>
@@ -166,7 +167,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="feature-item p-4 pt-0">
                             <div class="feature-icon p-4 mb-4">
-                            <i class="bi bi-controller"></i>
+                            <i class="bi bi-award-fill"></i>
                             </div>
                             <h4 class="mb-4">
                              <?php
@@ -239,7 +240,7 @@
                             <div class="service-img">
                                 <img src="img/mario.png" class="img-fluid rounded-top w-100" alt="">
                                 <div class="service-icon p-3">
-                                    <i class="bi bi-question-square"></i>
+                                <i class="bi bi-question-diamond"></i>
                                 </div>
                             </div>
                             <div class="service-content p-4">
